@@ -1,0 +1,203 @@
+.main__body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    background-image: url('../../images/Looper.svg');
+    background-size: cover; /* Растянуть изображение, чтобы оно покрывало всю область */
+    background-repeat: no-repeat;
+    background-position: center; /* Выравнивание по центру */
+}
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .main__h1 img{
+    width: 570px;
+    height: 112px;
+    margin-top: 120px;
+} */
+
+.main__h1-logo{
+    font-family: "Chillax";
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-size: 70px;
+    background: repeating-linear-gradient(90deg, rgba(255,28,247,1) 0%, rgba(0,240,255,1) 50%, rgba(255,28,247,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 100vw 100vw;
+    animation: slide 10s linear infinite forwards;
+}
+
+@keyframes slide {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100vw;
+    }
+}
+
+.main__h1-text{
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+
+.main__content-text{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 70px;
+    letter-spacing: 1px;
+}
+
+.main__btns{
+    display: flex;
+    gap: 80px;
+    font-family: "VK Sans Display";
+}
+
+.main__btns a{
+    /* padding: 20px 50px; */
+    font-family: 'Space Grotesk', sans-serif;
+    width: 160px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.btn-start{
+    background: linear-gradient(180deg, rgba(73,124,255,1) 0%, rgba(0,22,100,1) 100%);
+    cursor: pointer;
+    transition: background .4s ease;
+}
+/* .btn-start:hover{
+    background: linear-gradient(180deg, rgba(0,22,100,1) 0%, rgba(73,124,255,1) 100%);
+}
+ */
+.btn-ecosystem{
+    color: black;
+    background: linear-gradient(180deg, rgba(209,211,226,1) 0%, rgba(117,98,157,1) 100%);
+}
+
+@media screen and (max-width: 400px) {
+    .inner{
+        width: 90%;
+    }
+
+    .main__h1{
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    .main__h1-logo{
+        font-size: 10vw;
+    }
+
+    .main__h1-text{
+        font-size: 9vw;
+    }
+
+    .main__content-text{
+        font-size: 20px;
+    }
+
+    .main__btns{
+        display: flex;
+        gap: 10%;
+        font-family: "VK Sans Display";
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .main__h1{
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    .main__h1-logo{
+        font-size: 10vw;
+    }
+
+    .main__h1-text{
+        font-size: 9vw;
+    }
+
+    .main__content-text{
+        font-size: 20px;
+    }
+
+    .main__btns{
+        display: flex;
+        gap: 10%;
+        font-family: "VK Sans Display";
+    }
+}
+
+@media screen and (max-width: 900px)  {
+
+
+    .main__h1{
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    .main__h1-logo{
+        font-size: 10vw;
+    }
+
+    .main__h1-text{
+        font-size: 9vw;
+    }
+
+    .main__content-text{
+        font-size: 20px;
+    }
+
+    .main__btns{
+        display: flex;
+        gap: 10%;
+        font-family: "VK Sans Display";
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .main__h1{
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    .main__h1-logo{
+        font-size: 10vw;
+    }
+
+    .main__h1-text{
+        font-size: 9vw;
+    }
+
+    .main__content-text{
+        font-size: 5vw;
+    }
+
+    .main__btns{
+        display: flex;
+        gap: 10%;
+        font-family: "VK Sans Display";
+    }
+}

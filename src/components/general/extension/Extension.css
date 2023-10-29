@@ -1,0 +1,45 @@
+.extension__container{
+    width: 422px;
+    height: 100%;
+    box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.extension__input{
+    width: 200px;
+    height: 70%;
+    margin: 10px 0;
+    padding-left: 10px;
+    background: rgba(112, 144, 176, 0.11);
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.extension__container img{
+    width: auto;
+    height: 30%;
+}
+
+#user_logo{
+    width: auto;
+    height: 60%;
+}
+
+@media screen and (max-width: 1800px) {
+    .extension__container img{
+        width: auto;
+        height: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .extension__container {
+        display: none;
+    }
+}
